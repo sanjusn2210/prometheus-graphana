@@ -75,4 +75,4 @@ sudo docker restart <prometheus_container>
 
 ### 4. Please wait for some time to allow the data to be reflected in the Grafana dashboard.
 # prometheus-graphana
-# prometheus-graphana
+
