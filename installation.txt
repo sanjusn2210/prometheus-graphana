@@ -1,0 +1,21 @@
+1. Install Docker
+	curl -s https://raw.githubusercontent.com/jaintpharsha/install/main/docker | sudo bash
+
+2. Clone Prometheus-grafana setup repo 
+	git clone https://github.com/harshaprakash100/prometheus_grafana.git
+
+3. Run promethes grafana CAdvisor alertmanager node-exporter
+    docker compose up -d 
+    
+4. Add new scrap_configs in prometheus/prometheus.yml
+   Restart the prometheus container to apply new scrap configurations
+
+5. To access Prometheus Dashboard 
+    <public_ip>:9090
+    
+   To check all the prometheus scraps targets 
+    <public_ip>:9090/targets 
+    
+   To access Grafana Dashboard 
+    <public_ip>:3000
+    username and password configuration file: grafana/config.monitoring
